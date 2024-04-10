@@ -1,4 +1,4 @@
-$('.about').click(function(e){
+$('#about').click(function(e){
     e.preventDefault();
     var target = $($(this).attr('href'));
     if(target.length){

@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Om Kharche</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="particle.css">
+        <script src="https://kit.fontawesome.com/87e51d9f5c.js" crossorigin="anonymous"></script>
+        <script src="main.js"></script>
+    </head>
+
+    <body>
+    
+    </div>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="Images/Om.-removebg (1).png" class="logo">
+                    <ul>
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-text">
+                    <p>Dev & Filmmaker</p>
+                    <h1>Hey, I'm <span>Om Kharche</span><br> from India</h1>
+                </div>
+            </div>
+        </div>
+<!-- ----------------------about-------------------- -->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="Images/20230212_132104.jpg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">About Me</h1>
+                        <p>Myself, Om Kharche (19 y/o) a Future Entrepreneur, currently majoring in Computer Science from Vellore Institute of Technology.
+                            Passionate about developing for the better, headed towards Mobile Application development.
+                            Currently putting my best efforts at learning skills related to Flutter, backend and API creation.
+                            Generally love to Talk about Technology, Space, Digital Content Creation, Passive Income, Businesses, Health and General Happenings around the world 
+                            Personality Type : ENFJ - A
+                            Coding, Gaining insights , Public Speaking, Cinematography and Observing the night sky are one of my personal favorite hobbies 
+                        </p>
+
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                            <!-- <p class="tab-links">Experience</p> -->
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>2022 - 2026 (Expected)</span><br>B.tech Computer Science @ Vellore Institute of Technology</li>
+                                <li><span>2020-2022</span><br>XII Grade @ The Orbis School</li>
+                                <li><span>2016-2020</span><br>X Grade @ Vidya Pratisthan's Magarpatta City Public School</li>
+                                <li><span>2014-2016</span><br>JG International School, Ahemdabad</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Web & Application</span><br>Working on and learning development</li>
+                                <li><span>Video Editor</span><br>Filming Creative Movies</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!-- -------------------------------services--------------------------- -->
+
+<div id="services">
+    <div id="container">
+        <h1 class="sub-title" style="padding-left: 9%; text-shadow: 5px 4px 4px #000000;">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Test Hellow Check Hellow Hellow Hellow Hellow Hellow Hellow Hellow</p>
+                    <a href="#">Learn mode</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-video"></i>
+                    <h2>Video Editing</h2>
+                    <p>Test Hellow Check Hellow Hellow Hellow Hellow Hellow Hellow Hellow</p>
+                    <a href="#">Learn mode</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-mobile"></i>
+                    <h2>App Developer</h2>
+                    <p>Test Hellow Check Hellow Hellow Hellow Hellow Hellow Hellow Hellow</p>
+                    <a href="#">Learn mode</a>
+                </div>
+            </div>
+    </div>
+</div>
+
+
+<!-- ---------------------------------------portfolio----------------------------- -->
+
+<!-- <div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- ---------------------contact----------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>orkharche@gmail.com</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/omkharche8/"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@trulyom8"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="mailto:orkharche@gmail.com"><i class="fa-solid fa-at"></i></a>
+                </div>
+                <a href="Images/small.png" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form>
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="Message"  rows="6" placeholder="Your Message.."></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Om Kharche.</p>
+    </div>
+</div>
+
+<script>
+            var tablinks = document.getElementsByClassName("tab-links");
+            var tabcontents= document.getElementsByClassName("tab-contents");
+
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script src="" async defer></script>
+    </body>
+</html>

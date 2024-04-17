@@ -10,6 +10,7 @@
         <link rel="stylesheet" href="particle.css">
         <script src="https://kit.fontawesome.com/87e51d9f5c.js" crossorigin="anonymous"></script>
         <script src="main.js"></script>
+        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
     </head>
 
     <body>
@@ -19,13 +20,15 @@
             <div class="container">
                 <nav>
                     <img src="Images/Om.-removebg (1).png" class="logo">
-                    <ul>
+                    <ul id="sidemenu">
                         <li><a href="#header">Home</a></li>
                         <li><a href="#about">About</a></li>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Portfolio</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
                     </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
 
                 <div class="header-text">
@@ -43,12 +46,12 @@
                     </div>
                     <div class="about-col-2">
                         <h1 class="sub-title">About Me</h1>
-                        <p>Myself, Om Kharche (19 y/o) a Future Entrepreneur, currently majoring in Computer Science from Vellore Institute of Technology.
-                            Passionate about developing for the better, headed towards Mobile Application development.
-                            Currently putting my best efforts at learning skills related to Flutter, backend and API creation.
-                            Generally love to Talk about Technology, Space, Digital Content Creation, Passive Income, Businesses, Health and General Happenings around the world 
-                            Personality Type : ENFJ - A
-                            Coding, Gaining insights , Public Speaking, Cinematography and Observing the night sky are one of my personal favorite hobbies 
+                        <p>Computer Science Undergrad at Vellore Institute of Technology
+                            <br>
+                            I love to create films and explore Science & technology.
+                            <br>
+                            Keen on developing Mobile Applications & 
+                            Overclocking movie making skills.
                         </p>
 
                         <div class="tab-titles">
@@ -74,11 +77,11 @@
                 </div>
             </div>
         </div>
-<!-- -------------------------------services--------------------------- -->
+<!---------------------------------services--------------------------- -->
 
 <div id="services">
     <div id="container">
-        <h1 class="sub-title" style="padding-left: 9%; text-shadow: 5px 4px 4px #000000;">My Services</h1>
+        <h1 class="sub-title" style="padding-left: 137px;">My Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -101,20 +104,47 @@
             </div>
     </div>
 </div>
+<!-- <dotlottie-player src="https://lottie.host/8bb21af2-312d-4531-9b75-9c5bc71331c1/oKokQNOBMq.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
+
+<!-- <dotlottie-player src="https://lottie.host/3f95ca0a-7a3e-4e4a-a4e7-eb3ec02c83c9/7wnTRiucbJ.json" background="transparent" speed="1" style="width: 300px; height: 300px;" loop autoplay></dotlottie-player> -->
+
 
 
 <!-- ---------------------------------------portfolio----------------------------- -->
 
-<!-- <div id="portfolio">
+<div id="portfolio">
     <div class="container">
         <h1 class="sub-title">My Work</h1>
         <div class="work-list">
             <div class="work">
                 <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
+                <div class="layer">
+                    <h3>Group Chat Application</h3>
+                    <p>This app you can create groups and chat with the group members</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
+                <div class="layer">
+                    <h3>Group Chat Application</h3>
+                    <p>This app you can create groups and chat with the group members</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
+                <div class="layer">
+                    <h3>Group Chat Application</h3>
+                    <p>This app you can create groups and chat with the group members</p>
+                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
             </div>
         </div>
+        <a href="#" class="btn">See More</a>
     </div>
-</div> -->
+</div>
 
 
 
@@ -145,7 +175,10 @@
     <div class="copyright">
         <p>Copyright © Om Kharche.</p>
     </div>
+    
 </div>
+<!-- <img id="testani" src="https://lottie.host/embed/8bb21af2-312d-4531-9b75-9c5bc71331c1/oKokQNOBMq.json" alt=""> -->
+
 
 <script>
             var tablinks = document.getElementsByClassName("tab-links");
@@ -163,6 +196,18 @@
                 document.getElementById(tabname).classList.add("active-tab");
             }
         </script>
+
+
+<script>
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu() {
+        sidemeu.style.right = "0";
+    }
+    function closemenu() {
+        sidemeu.style.right = "-200px";
+    }
+</script>
         <script src="" async defer></script>
     </body>
 </html>

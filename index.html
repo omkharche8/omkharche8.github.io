@@ -8,12 +8,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link rel="stylesheet" href="particle.css">
-        <script src="https://kit.fontawesome.com/87e51d9f5c.js" crossorigin="anonymous"></script>
-        <script src="main.js"></script>
-        <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script> 
-    </head>
-
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+        
     <body>
+    <a href="#" class="to-top">
+        <i class="fa-solid fa-arrow-up"></i>
+    </a>
     
     </div>
         <div id="header">
@@ -31,10 +31,26 @@
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
 
+                <!-- <div class="header-text">
+                    <p>Developer & Filmmaker</p>
+                    <h1>Hey, I'm <span>Om Kharche</span><br> from India</h1>
+                </div> -->
                 <div class="header-text">
-                    <p>Dev & Filmmaker</p>
+                    <p><span class="auto-type"></span></p>
                     <h1>Hey, I'm <span>Om Kharche</span><br> from India</h1>
                 </div>
+                <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+                <script>
+                    var typed = new Typed(".auto-type", {
+                        strings: ["Flutter Developer", "Movie Maker",],
+                        typeSpeed: 70,
+                        backSpeed: 50,
+                        loop: true,
+                        loopCount: Infinity,
+                        smartBackspace: true,
+                        cursorChar: '_'
+                    })
+                </script>
             </div>
         </div>
 <!-- ----------------------about-------------------- -->
@@ -81,25 +97,25 @@
 
 <div id="services">
     <div id="container">
-        <h1 class="sub-title" style="padding-left: 137px;">My Services</h1>
+        <h1 class="sub-title" style="padding-left: 158px;"> Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
                     <h2>Web Design</h2>
-                    <p>Test Hellow Check Hellow Hellow Hellow Hellow Hellow Hellow Hellow</p>
-                    <a href="#">Learn mode</a>
+                    <p>Working proficiency in Figma & have used Design & content skills to post content on linkedin as well as my Youtube Channel</p>
+                    <!-- <a href="#">Learn mode</a> -->
                 </div>
                 <div>
                     <i class="fa-solid fa-video"></i>
                     <h2>Video Editing</h2>
-                    <p>Test Hellow Check Hellow Hellow Hellow Hellow Hellow Hellow Hellow</p>
-                    <a href="#">Learn mode</a>
+                    <p>Have strong video editing abilities and manage all aspects of video creation on my YouTube channel, including editing, production, and scripting.</p>
+                    <a href="https://www.youtube.com/@trulyom8" target="_blank">Learn mode</a>
                 </div>
                 <div>
                     <i class="fa-solid fa-mobile"></i>
                     <h2>App Developer</h2>
-                    <p>Test Hellow Check Hellow Hellow Hellow Hellow Hellow Hellow Hellow</p>
-                    <a href="#">Learn mode</a>
+                    <p>Have developed full stack applications with authentication, mutiple login screens, users and realtime database</p>
+                    <a href="https://github.com/omkharche8" target="_blank">Learn mode</a>
                 </div>
             </div>
     </div>
@@ -115,7 +131,7 @@
 
 <div id="portfolio">
     <div class="container">
-        <h1 class="sub-title">My Work</h1>
+        <h1 class="sub-title">Work</h1>
         <div class="work-list">
             <div class="work">
                 <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
@@ -171,7 +187,7 @@
                 </form>
             </div>
         </div>
-    </div>
+    </div>  
     <div class="copyright">
         <p>Copyright © Om Kharche.</p>
     </div>
@@ -197,6 +213,11 @@
             }
         </script>
 
+<!-- <script src="particles.js"></script>
+<script src="app.js"></script> -->
+<script src="https://kit.fontawesome.com/87e51d9f5c.js" crossorigin="anonymous"></script>
+<script src="main.js"></script>
+<script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>
 
 <script>
     var sidemeu = document.getElementById("sidemenu");

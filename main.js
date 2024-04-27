@@ -1,8 +1,9 @@
-$('#about').click(function(e){
-    e.preventDefault();
-    var target = $($(this).attr('href'));
-    if(target.length){
-      var scrollTo = target.offset().top;
-      $('body, html').animate({scrollTop: scrollTo+'px'}, 800);
+const toTop = document.querySelector(".to-top");
+
+window.addEventListener("scroll", () => {
+    if (window.pageYOffset > 100) {
+        toTop.classList.add("active");
+    } else {
+        toTop.classList.remove("active");
     }
-  });
+})

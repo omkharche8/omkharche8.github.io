@@ -197,8 +197,11 @@ nav ul li a:hover::after{
 
 #services {
     padding: 183px 0px;
-    
-    
+}
+
+#services #container .sub-title {
+    text-align: center;
+    padding-left: 0; 
 }
 .services-list {
     display: grid;
@@ -539,7 +542,43 @@ nav .fa-solid {
         justify-content: center;
     }
 
+    .row {
+
+    }
+    form input, form textarea {
+        width: 100%;
+        border-style: solid;
+        border-color: #ff004f;
+        border-width: 1px;
+        outline: none;
+        background: #262626;
+        padding: 17px;
+        margin: 12px 0;
+        color: #fff;
+        font-size: 18px;
+        border-radius: 6px;
+    }
     
+    .contact-left {
+        flex-basis:  100%;
+        margin-top: 30px;
+        justify-content: center;
+    }
+    
+    .contact-right {
+        flex-basis: 100%;
+        margin-top: 25px;
+        
+    }
+    .services-list {
+        padding: 45px; 
+        grid-template-columns: 1fr; 
+        justify-items: center; 
+    }
+
+    #services #container .sub-title {
+        padding-left: 0; /* Reset padding */
+    }
 
 
 }

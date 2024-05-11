@@ -7,27 +7,47 @@ window.addEventListener("scroll", () => {
         toTop.classList.remove("active");
     }
 })
+
+
+// -----tablinks---------
+var tablinks = document.getElementsByClassName("tab-links");
+var tabcontents = document.getElementsByClassName("tab-contents");
+
+function opentab(tabname) {
+    for (tablink of tablinks) {
+        tablink.classList.remove("active-link");
+    }
+
+    for (tabcontent of tabcontents) {
+        tabcontent.classList.remove("active-tab");
+    }
+    event.currentTarget.classList.add("active-link");
+    document.getElementById(tabname).classList.add("active-tab");
+}
+
+
+// ------under construction---------
 document.addEventListener('DOMContentLoaded', function () {
     var floatingElement = document.getElementById('floating-element');
     var overlay = document.getElementById('overlay');
 
     floatingElement.addEventListener('click', function (event) {
-        event.stopPropagation(); // Prevent the click event from propagating to the overlay
+        event.stopPropagation();
     });
 
     overlay.addEventListener('click', function () {
-        floatingElement.style.display = 'none'; // Hide the floating element
-        overlay.style.display = 'none'; // Hide the overlay
+        floatingElement.style.display = 'none';
+        overlay.style.display = 'none';
     });
 
     document.addEventListener('keydown', function (event) {
         if (event.key === 'Escape') {
-            floatingElement.style.display = 'none'; // Hide the floating element
-            overlay.style.display = 'none'; // Hide the overlay
+            floatingElement.style.display = 'none';
+            overlay.style.display = 'none';
         }
     });
 
-    // Show the floating element and overlay initially (for demonstration purposes)
     floatingElement.style.display = 'block';
     overlay.style.display = 'block';
 });
+

@@ -16,11 +16,11 @@
     </a>
     <div id="overlay"></div>
 
-    <div id="floating-element">
+    <!-- <div id="floating-element">
         <h2><span>Website Still Under Development</span></h2>
         <br>
         <p>Click anywhere outside this box to close it.</p>
-    </div>
+    </div> -->
     
     </div>
         <div id="header">
@@ -37,11 +37,6 @@
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
                 </nav>
-
-                <!-- <div class="header-text">
-                    <p>Developer & Filmmaker</p>
-                    <h1>Hey, I'm <span>Om Kharche</span><br> from India</h1>
-                </div> -->
                 <div class="header-text">
                     <p><span class="auto-type"></span></p>
                     <h1>Hey, I'm <span>Om Kharche</span><br> from India</h1>
@@ -104,7 +99,7 @@
 
 <div id="services">
     <div id="container">
-        <h1 class="sub-title" style="padding-left: 158px;"> Services</h1>
+        <h1 class="sub-title">Services</h1>
             <div class="services-list">
                 <div>
                     <i class="fa-solid fa-code"></i>
@@ -143,25 +138,28 @@
             <div class="work">
                 <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
                 <div class="layer">
-                    <h3>Group Chat Application</h3>
+                    <h2>Group Chat Application</h2>
+                    <br>
                     <p>This app you can create groups and chat with the group members</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <a href="https://github.com/omkharche8/chatapplication"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
                 <div class="layer">
-                    <h3>Group Chat Application</h3>
-                    <p>This app you can create groups and chat with the group members</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h2>PDF Analyzer</h2>
+                    <br>
+                    <p>A Python based project which takes the pdf document as context to answer within the boundaries</p>
+                    <a href="https://github.com/omkharche8/PDFAnalyzer"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
             <div class="work">
                 <img src="Images/Screenshot 2023-04-03 221959.png" alt="">
                 <div class="layer">
-                    <h3>Group Chat Application</h3>
-                    <p>This app you can create groups and chat with the group members</p>
-                    <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    <h2>P2P Malware Detector</h2>
+                    <br>
+                    <p>A Python based project which detects malware among the shared files among users</p>
+                    <a href="https://github.com/Prajwal-Shrimali/P2P-Shield"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
                 </div>
             </div>
         </div>
@@ -183,7 +181,7 @@
                     <a href="https://www.youtube.com/@trulyom8"><i class="fa-brands fa-youtube"></i></a>
                     <a href="mailto:orkharche@gmail.com"><i class="fa-solid fa-at"></i></a>
                 </div>
-                <a href="Images/small.png" download class="btn btn2">Download CV</a>
+                <a href="Images/Resume_Summer.pdf" download class="btn btn2">Download CV</a>
             </div>
             <div class="contact-right">
                 <form name="submit-to-google-sheet">
@@ -204,24 +202,9 @@
 
 
 <script>
-            var tablinks = document.getElementsByClassName("tab-links");
-            var tabcontents= document.getElementsByClassName("tab-contents");
 
-            function opentab(tabname){
-                for(tablink of tablinks){
-                    tablink.classList.remove("active-link");
-                }
-
-                for(tabcontent of tabcontents){
-                    tabcontent.classList.remove("active-tab");
-                }
-                event.currentTarget.classList.add("active-link");
-                document.getElementById(tabname).classList.add("active-tab");
-            }
-        </script>
-
-<!-- <script src="particles.js"></script>
-<script src="app.js"></script> -->
+</script>
+    
 <script src="https://kit.fontawesome.com/87e51d9f5c.js" crossorigin="anonymous"></script>
 <script src="main.js"></script>
 <script src="https://unpkg.com/@dotlottie/player-component@latest/dist/dotlottie-player.mjs" type="module"></script>

@@ -445,6 +445,9 @@ form .btn2 {
   #floating-element p {
     text-align: center;
   }
+  #floating-element h2 {
+    text-align: center;
+  }
   #overlay {
     position: fixed;
     top: 0;

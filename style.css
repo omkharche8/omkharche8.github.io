@@ -255,6 +255,11 @@ nav ul li a:hover::after{
     margin-bottom: 30px;
 
 }
+
+#portfolio .container .sub-title {
+    text-align: center;
+    padding-left: 0;
+}
 .work-list {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -576,6 +581,10 @@ nav .fa-solid {
 
     #services #container .sub-title {
         padding-left: 0; /* Reset padding */
+    }
+
+    #portfolio #container .sub-title h1 {
+        padding-left: 0;
     }
 
 
